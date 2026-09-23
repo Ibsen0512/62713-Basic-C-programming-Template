@@ -24,14 +24,14 @@ int main(void)
             /* code */
             Salary = nH * hR;
             printf("This employees Salary is: \n");
-            printf("%d", &Salary);
+            printf("%d", Salary);
         }
         else if (nH > 37)
         {
             /* code */
             Salary = (37 * hR) + (nH - 37) * (1.5 * hR);
             printf("This employees Salary is: \n");
-            printf("%d", &Salary);
+            printf("%d", Salary);
         }
     }
 
