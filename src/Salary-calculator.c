@@ -11,12 +11,19 @@ int main(void)
     int nH, hR;
     int Salary;
 
-    printf("Enter the number of worked hours \n");
-    scanf("%d", &nH);
-
-    while (nH > 0)
+    do
     {
-        printf("\nEnter the hourly rate: \n");
+        /* code */
+        printf("\nEnter the number of worked hours \n");
+        scanf("%d", &nH);
+
+        // Stop programmet hvis nH er negativ
+        if (nH < 0)
+        {
+            break;
+        }
+
+        printf("Enter the hourly rate: \n");
         scanf("%d", &hR);
 
         if (nH <= 37)
@@ -33,7 +40,7 @@ int main(void)
             printf("This employees Salary is: \n");
             printf("%d", Salary);
         }
-    }
+    } while (nH >= 0);
 
     return 0;
 }
