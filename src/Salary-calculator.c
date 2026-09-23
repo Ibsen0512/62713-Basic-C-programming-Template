@@ -8,8 +8,8 @@ int main(void)
     // https://www.w3schools.com/c/c_while_loop.php
     // https://www.w3schools.com/c/c_operators_comparison.php
 
-    int nH, hR;
-    int Salary;
+    int nH;
+    float hR, Salary;
 
     do
     {
@@ -24,21 +24,21 @@ int main(void)
         }
 
         printf("Enter the hourly rate: \n");
-        scanf("%d", &hR);
+        scanf("%f", &hR);
 
         if (nH <= 37)
         {
             /* code */
             Salary = nH * hR;
             printf("This employees Salary is: \n");
-            printf("%d", Salary);
+            printf("%.2f", Salary);
         }
         else if (nH > 37)
         {
             /* code */
             Salary = (37 * hR) + (nH - 37) * (1.5 * hR);
             printf("This employees Salary is: \n");
-            printf("%d", Salary);
+            printf("%.2f", Salary);
         }
     } while (nH >= 0);
 
